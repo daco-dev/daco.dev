@@ -1,0 +1,29 @@
+---
+import Meta from "./Meta.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { metaData } from "@/utils/metaData";
+
+// Supports weights 100-900
+import "@fontsource-variable/onest";
+
+const { titlePage, description, keywords } = metaData.home;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <Meta title={titlePage} description={description} keywords={keywords} />
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <style is:global>
+      body {
+        @apply bg-bgbase text-white;
+        font-family: "Onest Variable", sans-serif;
+      }
+    </style>
+    <Footer />
+  </body>
+</html>
