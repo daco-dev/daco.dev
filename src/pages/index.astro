@@ -1,34 +1,8 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
-import { Image } from "astro:assets";
-import profile from "../assets/profile.png";
+import Hero from "@components/Hero.astro";
 ---
 
 <MainLayout>
-  <div class="px-10">
-    <div class="w-full h-full flex justify-center items-center px-40">
-      <main class="px-20">
-        <section>
-          <h1 class="text-2xl">
-            Hola soy <span class="text-main">Daniel</span>
-          </h1>
-          <h2>desarrollador de software</h2>
-        </section>
-        <section>
-          <p>
-            Mi objetivo es contribuir a proyectos significativos, aportando
-            tanto mi capacidad técnica como mi experiencia en liderazgo. Busco
-            colaborar con equipos que valoran la excelencia y la innovación.
-          </p>
-        </section>
-      </main>
-      <Image
-        src={profile}
-        class=""
-        width="300"
-        height="300"
-        alt="daniel foto"
-      />
-    </div>
-  </div>
+  <Hero />
 </MainLayout>
