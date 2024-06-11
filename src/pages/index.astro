@@ -1,8 +1,66 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
 import Hero from "@components/Hero.astro";
+
+const styleLinks = "hover:underline hover:text-main font-bold uppercase";
+const links = {
+  x: "https://x.com/daco_dev",
+  github: "https://github.com/daco_dev",
+  blog: "/blog/",
+  webMusical: "/",
+};
 ---
 
 <MainLayout>
   <Hero />
+  <main class="px-10 sm:mt-40">
+    <h3 class="text-xl uppercase font-bold text-center">
+      /Sobre <span class="text-main">Mí</span>
+    </h3>
+    <section>
+      Soy un desarrollador FullStack, apasionado por brindar valor a las
+      empresas a través de la tecnología. Me encanta el desafío de encontrar
+      soluciones creativas a los problemas y disfruto colaborando con equipos
+      para lograr grandes resultados.
+    </section>
+    <section>
+      Me dedico a mantenerme actualizado con las últimas tecnologías y
+      tendencias para brindar las mejores soluciones a mis clientes. Cuido mucho
+      los detalles en el diseño y desarrollo de mis proyectos. Mi objetivo final
+      es crear un software que sea tanto fácil de usar como impactante para
+      lograr los objetivos del cliente.
+    </section>
+    <section>
+      Puede encontrarme en <a
+        href={links.x}
+        target="_blank"
+        rel="noopener noreferrer"
+        class={`${styleLinks}`}>Twitter</a
+      >, donde comparto cositas relacionadas con la tecnología y construyo en
+      público, o puede seguirme en <a
+        href={links.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class={`${styleLinks}`}>GitHub</a
+      >. A menudo escribo sobre mis hallazgos en mi <a
+        href={links.blog}
+        target="_blank"
+        rel="noopener noreferrer"
+        class=`${styleLinks}`>Blog.</a
+      > Un perfil no tan tecnico, soy musico guitarrita profesional, si quieres aprender
+      de musica y mas de este mundo artistico visita mi <a
+        href={links.webMusical}
+        target="_blank"
+        rel="noopener noreferrer"
+        class={`${styleLinks}`}>Web,</a
+      > donde hablo temas que pueden ayudarte a crecer.
+    </section>
+  </main>
 </MainLayout>
+
+<style>
+  section {
+    @apply text-paraph;
+    padding: 10px;
+  }
+</style>
