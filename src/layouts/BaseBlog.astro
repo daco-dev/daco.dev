@@ -7,16 +7,16 @@ import Footer from "@components/Footer.astro";
 import "@fontsource-variable/onest";
 
 import config from "@/config/config.json";
-const { title, favicon, metaData } = config.site;
+const { favicon, metaData } = config.site;
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
     <Meta
-      title={title}
-      description={metaData.home.description}
-      keywords={metaData.home.keywords}
+      title={metaData.blog.titlePage}
+      description={metaData.blog.description}
+      keywords={metaData.blog.keywords}
       icon={favicon}
     />
   </head>

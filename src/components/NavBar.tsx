@@ -1,23 +1,5 @@
 import { useState } from "react";
-
-const navLinks: { label: string; url: string }[] = [
-  {
-    label: "inicio",
-    url: "/",
-  },
-  {
-    label: "blog",
-    url: "/blog",
-  },
-  {
-    label: "sobre mi",
-    url: "/#sobremi",
-  },
-  {
-    label: "contacto",
-    url: "/#contacto",
-  },
-];
+import menu from "@config/menu.json";
 
 export default function NavBar() {
   const [isClick, setIsClick] = useState(false);
@@ -32,12 +14,12 @@ export default function NavBar() {
         <div className="w-full flex justify-between items-center">
           <div className="flex-shrink-0">
             <a href={"/"}>
-              <img src="/daco.png" alt="daco.dev logo" />
+              <img src="/images/daco.png" alt="daco.dev logo" />
             </a>
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center space-x-4">
-              {navLinks.map((link, key) => (
+              {menu.map((link, key) => (
                 <div key={key}>
                   <a
                     href={link.url}
@@ -91,7 +73,7 @@ export default function NavBar() {
       </div>
       {isClick && (
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          {navLinks.map((link, key) => (
+          {menu.map((link, key) => (
             <div key={key} className="flex justify-center">
               <a
                 href={link.url}

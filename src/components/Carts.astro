@@ -1,0 +1,15 @@
+---
+interface Props {
+  titleTech: string;
+  description: string | any;
+}
+
+const { titleTech, description } = Astro.props;
+---
+
+<div class="bg-card hover:scale-105 inline-block p-5 rounded-lg">
+  <div class="text-center">
+    <h3 class="font-bold uppercase text-base text-center">{titleTech}</h3>
+    <p class="p-1">{description}</p>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "front": ["| React.js |", " Next.js |", " Angular |", " Astro |"],
+  "back": ["| Express |", " Nest.js |", " Spring Boot |"],
+  "styles": [
+    "| CSS |",
+    " SASS |",
+    " TAilwindCSS |",
+    " Material-UI |",
+    " Bootstrap |"
+  ],
+  "storage": [
+    "| MySQL |",
+    " MongoDB |",
+    " PostgreSQL |",
+    " Redis |",
+    " Cassandra |"
+  ],
+  "programming_language": ["| JavaScript |", " TypeScript |", " Java |"],
+  "libs_tools": ["| Docker |", " Git & Github |", " BashScript |"]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Inicio",
+    "url": "/"
+  },
+  {
+    "label": "Blog",
+    "url": "/blog"
+  },
+  {
+    "label": "Sobre mi",
+    "url": "/about"
+  },
+  {
+    "label": "Contacto",
+    "url": "/contact"
+  }
+]

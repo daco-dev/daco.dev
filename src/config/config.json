@@ -1,0 +1,20 @@
+{
+  "site": {
+    "title": "daco.dev",
+    "base_url": "/",
+    "favicon": "/images/daco.png",
+    "logo": "/images/profile.webp",
+    "metaData": {
+      "home": {
+        "titlePage": "daco.dev",
+        "description": "Hola soy Daniel Colmenares, desarrollador de software con 3+ años de experiencia usando tecnologías web",
+        "keywords": "fullStack developer, backend developer, frontend developer, dacodev, daco.dev, programador, software"
+      },
+      "blog": {
+        "titlePage": "| Blog",
+        "description": "En este blog podrás encontrar información relacionado a mundo de TI",
+        "keywords": "linux, blog, posts, programación, fullstack, backend, frontend, development"
+      }
+    }
+  }
+}
